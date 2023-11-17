@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@900&family=Noto+Sans+KR&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@800&family=Noto+Sans+KR:wght@400;900&family=PT+Sans:wght@700&family=Rubik&display=swap');
+
+#info {
+    width: 1440px;
+    height: 1000px;
+
+    position: relative;
+    top: 90px;
+    margin: 0 auto;
+}
+
+#info #bg {
+    position: absolute;
+    background-color: #fcf3f3;
+    width: 970px;
+    height: 1000px;
+    left: 50%;
+}
+
+#infoL {
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+
+#infoL h2 {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 43px;
+    color: #f65c5c;
+    font-weight: bold;
+}
+
+#infoL h3 {
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    color: transparent;
+    background: linear-gradient(to right, #fc6363, #fcc1e8);
+    font-weight: 1000;
+    letter-spacing: -5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#infoL p>span {
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #5a5a5a;
+}
+
+#infoL p>img {
+    margin-bottom: 60px;
+}
+
+#infoL #vm p a {
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    padding: 15px 10px;
+    display: block;
+    color: #414141;
+    position: relative;
+    border: 2px solid #f65c5c;
+    text-align: center;
+    border-radius: 50px;
+    transition: all 10s;
+    z-index: 1;
+}
+
+#infoL #vm {
+    width: 200px;
+    height: 60px;
+    margin-top: 110px;
+}
+
+#infoL #vm p a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 59px;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    border-radius: 50px;
+    color: white;
+}
+
+#infoL #vm a:hover:after {
+    width: 100%;
+    z-index: -1;
+    background-color: #f65c5c;
+}
+
+
+#infoR {
+    top: 200px;
+    right: -150px;
+    position: relative;    
+}
+
+#infoR ul:first-child {
+    position: absolute;
+    right: 700px;
+    list-style: none;
+    top: 123px;
+    border-right: 5px solid white;
+    padding-right: 20px;
+}
+
+#infoR ul:first-child li {
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    margin-bottom: 65px;
+    opacity: 0.7;
+    text-align: left;
+}
+
+#infoR ul:first-child li:last-child{
+    margin-bottom: 20px;
+}
+
+#infoR ul:first-child li:first-child{
+    margin-top: 20px;
+}
+
+#infoR ul:last-child {
+    position: absolute;
+    right: 210px;
+    list-style: none;
+    top: 135px;
+}
+
+#infoR ul:last-child li {
+    font-size: 21px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #5a5a5a;
+    white-space: pre;
+}
+
+#infoR ul:last-child li:nth-child(1) {
+    margin-bottom: 70px;
+}
+
+#infoR ul:last-child li:nth-child(2) {
+    margin-bottom: 68px;
+}
+#infoR ul:last-child li:nth-child(4) {
+    margin-bottom: 65px;
+}

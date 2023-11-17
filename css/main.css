@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import "animate.css";
+
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 메인배경화면 */
+
+#mainBg {
+  width: 100%;
+  height: 2000px;
+  position: absolute;
+  z-index: -999;
+  -webkit-animation: bg ease-in-out 8s infinite;
+  -moz-animation: bg ease-in-out 8s infinite;
+  -ms-animation: bg ease-in-out 8s infinite;
+  -o-animation: bg ease-in-out 8s infinite;
+  animation: bg ease-in-out 8s infinite;
+}
+
+#mainBg img {
+  background-size: 100% 900px;
+  margin-top: 900px;
+  width: 100%;
+  height: 900px;
+}
+
+@keyframes bg {
+  0% {
+    background-color: #8ebefe;
+  }
+
+  50% {
+    background-color: #f99b9b;
+  }
+
+  100% {
+    background-color: #8ebefe;
+  }
+}
+
+@keyframes motion {
+  0% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: 20px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+/* main_top 컨텐트영역 */
+
+#main {
+  width: 100%;
+  position: relative;
+}
+
+#main_top {
+  width: 100%;
+  height: 1000px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+#main_top ul {
+  list-style: none;
+}
+
+#main_top #mLogo {
+  margin: 0 auto;
+}
+
+#main_top #mLogo ul li:nth-child(1) img {
+  margin: 0 auto;
+  display: block;
+}
+
+#main_top li:nth-child(1) span {
+  display: none;
+}
+
+#main_top li:nth-child(2) p {
+  color: white;
+  font-size: 57px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  letter-spacing: -5px;
+}
+
+/* scroll */
+#scroll {
+  margin-top: 130px;
+  opacity: 0.6;
+}
+
+#scroll li:first-child p {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#scroll li:last-child {
+  width: 13px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 100px;
+  margin: 0 auto;
+  padding-right: 4px;
+}
+
+#scroll li:last-child p {
+  font-size: 12px;
+}
+
+#scroll li:last-child p {
+  animation: dot ease-in-out 1.6s infinite;
+}
+
+@keyframes dot {
+  0% {
+    margin-top: 0;
+  }
+
+  30% {
+    margin-top: 18px;
+  }
+
+  40% {
+    margin-top: 19px;
+  }
+
+  60% {
+    margin-top: 20px;
+    opacity: 0.5;
+  }
+
+  100% {
+    margin-top: 0;
+    opacity: 0;
+  }
+}
+
+/* main_bottom 컨텐트영역 */
+
+#main_bottom {
+  position: relative;
+  top: 100px;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 1000px;
+  overflow: hidden;
+  padding-top: 200px;
+}
+
+#content {
+  width: 1920px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#main_bottom #cloudL {
+  position: absolute;
+  left: -100px;
+  top: 0;
+}
+
+#main_bottom #cloudR {
+  position: absolute;
+  right: -130px;
+  top: 100px;
+}
+
+#main_bottom #bridge {
+  position: absolute;
+  z-index: 1;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#main_bottom #center {
+  position: absolute;
+  z-index: 3;
+  top: -120px;
+  left: 450px;
+  margin: 0 auto;
+}
+
+#main_bottom #grass {
+  position: absolute;
+  z-index: 2;
+  top: 450px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#main_bottom #dance {
+  position: absolute;
+  z-index: 4;
+  top: 270px;
+  left: 650px;
+}
+
+#main_bottom #hug {
+  position: absolute;
+  z-index: 4;
+  top: 280px;
+  right: 700px;
+}
+
+#main_bottom #redCar {
+  position: absolute;
+  z-index: 4;
+  top: 300px;
+  left: -50px;
+}
+
+#main_bottom #talk1 {
+  position: absolute;
+  z-index: 4;
+  top: 500px;
+  left: 100px;
+}
+
+#main_bottom #talk2 {
+  position: absolute;
+  z-index: 4;
+  top: 520px;
+  left: 350px;
+}
+
+#main_bottom #cosmetic {
+  position: absolute;
+  right: 0px;
+  z-index: 4;
+  top: 300px;
+}
+
+#main_bottom #leafL {
+  position: absolute;
+  left: -20px;
+  z-index: 4;
+  bottom: -800px;
+}
+
+#main_bottom #leafR {
+  position: absolute;
+  right: -10px;
+  z-index: 4;
+  bottom: -750px;
+}
+
+#main_bottom #instagram {
+  position: absolute;
+  z-index: 5;
+  opacity: 0.5;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 18px;
+  bottom: 25px;
+  left: 970px;
+}
+
+#main_bottom #instagram:hover {
+  background: #fff;
+  background-image: url(../images/icon/Instagram.png);
+  background-size: 55px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main_bottom #instagram:hover img {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+#main_bottom #faceBook {
+  position: absolute;
+  bottom: 25px;
+  left: 900px;
+  transform: translate(-50%, 0);
+  z-index: 5;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  opacity: 0.5;
+  padding: 20px;
+}
+
+#main_bottom #faceBook:hover {
+  background: #fff;
+  background-image: url(../images/icon/facebook.png);
+  background-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main_bottom #faceBook:hover img {
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+/* 탑버튼 */
+
+#top_btn {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 400;
+  width: 20px;
+  height: 20px;
+  animation: bounce ease-in-out 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 60px;
+  }
+  50% {
+    bottom: 70px;
+  }
+  100% {
+    bottom: 60px;
+  }
+}
+
+#top_btn a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  color: #ff6d6d;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}

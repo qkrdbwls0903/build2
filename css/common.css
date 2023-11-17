@@ -1,0 +1,17 @@
+/* all */
+html {
+  overflow-y: scroll;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html::-webkit-scrollbar {width: 12px;}
+html::-webkit-scrollbar-thumb {background-color: #f99b9b;  border-radius: 10px;}

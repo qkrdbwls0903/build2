@@ -1,0 +1,48 @@
+/* footer영역 */
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  background: #ffcccc;
+}
+
+footer img:nth-child(1) {
+  position: absolute;
+  top: 30px;
+  left: 312px;
+}
+
+footer img:nth-child(2) {
+  position: absolute;
+  top: 120px;
+  left: 312px;
+}
+
+footer #footer1 {
+  position: absolute;
+  right: 314px;
+  top: 30px;
+}
+footer #footer1 span:nth-child(1) {
+  font-size: 23px;
+  font-weight: bold;
+  color: rgba(189, 189, 189, 0.801);
+}
+
+footer #footer1 span:nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffffbd;
+  display: block;
+}
+
+#footer2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: bold;
+  color: #ffffff8c;
+}

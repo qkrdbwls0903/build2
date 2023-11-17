@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Oswald&display=swap");
+
+/* header */
+
+header {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  z-index: 888;
+  top: 0;
+}
+
+/* 로고 */
+header #logo h1 span {
+  display: none;
+}
+
+header #logo {
+  width: 90px;
+  height: 90px;
+  padding: 10px 50px;
+  float: left;
+  position: fixed;
+  z-index: 998;
+}
+
+#subLogo {
+  padding: 10px 50px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+}
+
+/* 메뉴영역 */
+
+header #menu {
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  background-color: rgba(255, 206, 206, 0);
+  z-index: 997;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-timing-function: ease;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+header #menu > ul {
+  position: relative;
+  top: 10px;
+  z-index: 998;
+  list-style: none;
+  left: 49%;
+  transform: translate(-49%, 0);
+  width: 800px;
+}
+
+header #menu > ul li {
+  float: left;
+  margin-left: 80px;
+}
+
+header #menu > ul li:nth-child(2) {
+  margin-right: 5px;
+}
+
+header #menu > ul li:nth-child(3) {
+  margin-right: 5px;
+}
+
+header #menu > ul li a {
+  font-size: 21px;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -1px;
+  font-weight: bold;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+}
+
+#subMenu > ul > li > a > span {
+  position: relative;
+  padding: 10px;
+}
+
+#subMenu > ul > li > a > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fc8080;
+  transition: width 0.3s;
+}
+
+#subMenu > ul > li:hover > a > span:after {
+  width: 100%;
+}
+
+#menu > ul > li > a > span {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+#menu > ul > li > a > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fc8080;
+  transition: width 0.3s;
+}
+
+#menu > ul > li:hover > a > span:after {
+  width: 100%;
+}
+
+/* language영역*/
+
+header #language {
+  width: 94px;
+  height: 32px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  display: block;
+  z-index: 999;
+}
+
+header #language ul {
+  list-style: none;
+}
+
+header #language li p {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header #language #ko img {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  padding-left: 50px;
+}
+
+header #language li:nth-child(2) a {
+  margin-top: 30px;
+  margin-right: 30px;
+  font-size: 22px;
+  font-weight: 600;
+  color: white;
+}
+
+/* 서브메뉴*/
+
+#subMenu {
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 90px;
+  height: 300px;
+  width: 900px;
+  border-top: 4px solid #ffffff;
+}
+
+#subMenu ul {
+  float: left;
+  list-style: none;
+  padding-right: 10px;
+}
+
+#subMenu ul:nth-child(1) {
+  margin-left: 115px;
+}
+
+#subMenu ul:nth-child(2) {
+  margin-left: 7px;
+}
+
+#subMenu ul:nth-child(3) {
+  margin-left: -35px;
+}
+
+#subMenu ul:nth-child(4) {
+  margin-left: -30px;
+}
+
+#subMenu ul:last-child {
+  margin-left: px;
+}
+
+#subMenu ul li {
+  padding: 15px 15px;
+  text-align: center;
+}
+
+#subMenu > ul > li > a > span {
+  position: relative;
+  padding: 10px;
+}
+
+#subMenu > ul > li > a > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fc8080;
+  transition: width 0.3s;
+}
+
+#subMenu > ul > li:hover > a > span:after {
+  width: 100%;
+}
+
+#menu > ul > li:hover a {
+  color: #cd7f7f;
+}
+
+#subMenu ul:hover > li {
+  height: auto;
+}
+
+#subMenu ul li a {
+  font-size: 17px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  color: #cd7f7f;
+}
+
+/* 서브메뉴 배경 */
+
+header #menu > ul + #subBg {
+  background-color: rgb(251, 238, 238, 0.9);
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 997;
+}
+
+#cloud1 {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
+#cloud2 {
+  position: absolute;
+  top: 230px;
+  left: 300px;
+}
+
+#subimg {
+  position: absolute;
+  right: 100px;
+  top: 150px;
+}
